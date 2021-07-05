@@ -1,0 +1,44 @@
+{
+  "name": "webowy/zend-pdf",
+  "description": "Provides an easy to use functionality to output PDF in Zend Framework",
+  "license": "BSD-3-Clause",
+  "version": "v0.2.0",
+  "keywords": [
+    "webowy",
+    "zend",
+    "framework",
+    "pdf"
+  ],
+  "authors": [
+    {
+      "name": "Piotr Obidowski",
+      "email": "pobidowski@webowy.agency",
+      "homepage": "http://webowy.agency",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Webowy\\Pdf\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^5.5 || ^7.0",
+    "zendframework/zend-servicemanager": "3.*",
+    "zendframework/zend-view": "2.* || 3.*",
+    "zendframework/zendpdf": "2.*"
+  },
+  "require-dev": {
+    "phpunit/PHPUnit": "5.*"
+  },
+  "suggest": {
+    "webowy/zend-pdf-engine-dompdf": "DOMPDF Engine"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload-dev": {
+    "psr-4": {
+      "WebowyTest\\Pdf\\": "test/"
+    }
+  }
+}

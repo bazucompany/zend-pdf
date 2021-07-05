@@ -1,0 +1,15 @@
+<?php
+return [
+    'view_manager' => [
+        'strategies' => [
+            'ViewPdfStrategy'
+        ]
+    ],
+    'service_manager' => [
+        'factories' => [
+            'PDF' => \Webowy\Pdf\View\Renderer\Engine\DOMPDFFactory::class,
+            'ViewPdfRenderer' => \Webowy\Pdf\View\Renderer\PdfRendererFactory::class,
+            'ViewPdfStrategy' => \Webowy\Pdf\View\Strategy\PdfStrategyFactory::class,
+        ]
+    ],
+];
